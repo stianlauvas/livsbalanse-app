@@ -4217,10 +4217,10 @@
     }
 
     // ==================== 🔒 PIN / PASSORD LÅSESKJERM ====================
-    // SHA-256("livsbalanse_salt_9487") = "7d2b5781c36a35ca7d51797c52b20c64b018987b8ca4e14842214694f3e07c55"
+    // SHA-256("livsbalanse_salt_9487") = "05d1e9fe7f6d244fb06013dae93c1ccd0b798e55eb186d1b0bca7fa0b3d3be56"
     const PIN_STORAGE_HASH_KEY = 'livsbalanse_pin_sha256_v1';
     const PIN_UNLOCKED_KEY = 'livsbalanse_pin_unlocked_v1';
-    const DEFAULT_PIN_SHA256 = '7d2b5781c36a35ca7d51797c52b20c64b018987b8ca4e14842214694f3e07c55';
+    const DEFAULT_PIN_SHA256 = '05d1e9fe7f6d244fb06013dae93c1ccd0b798e55eb186d1b0bca7fa0b3d3be56';
 
     async function sha256Pin(pinStr) {
       const text = 'livsbalanse_salt_' + String(pinStr).trim();
